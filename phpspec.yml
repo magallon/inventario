@@ -1,0 +1,5 @@
+suites:
+    main:
+        namespace: inventario
+        psr4_prefix: inventario
+        src_path: app
