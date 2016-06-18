@@ -102,7 +102,7 @@
 					</div>
 					
 				</div>
-
+				<input type="submit" value="Cancelar" class="btn  btn-default">
 				<input type="submit" value="Registrar" class="btn  btn-primary">
 
 			</form>
