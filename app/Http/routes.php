@@ -1,13 +1,32 @@
 <?php
-Route::get('/', function () {
-    return view('welcome');
-});
+
+//login---------------------------------------------------------------------------------------------------------------
 Route::get('iniciar', function (){
 	return view('login');
 });
-Route::post('administrador', function (){
-	return view('index');
+
+//tablas--------------------------------------------------------------------------------------------------------------
+Route::get('departamento', function (){
+	return view('departamento');
 });
+
+Route::get('empleado', function (){
+	return view('empleado');
+});
+
+Route::get('equipo', function (){
+	return view('equipo');
+});
+
+Route::get('impresora', function (){
+	return view('impresora');
+});
+
+Route::get('accesorio', function (){
+	return view('accesorio');
+});
+
+//altas---------------------------------------------------------------------------------------------------------------
 Route::get('alta_empleado', function (){
 	return view('alta_empleado');
 });
@@ -23,3 +42,4 @@ Route::get('alta_impresora', function (){
 Route::get('alta_accesorio', function (){
 	return view('alta_accesorio');
 });
+
