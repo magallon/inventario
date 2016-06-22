@@ -55,11 +55,11 @@
                 <div class="sidebar-nav navbar-collapse">
                     <ul class="nav" id="side-menu">
                         <li>
-                            <a href="empleado"><i class="fa fa-users fa-fw"></i> Empleados</a>
+                            <a href="alta_empleado"><i class="fa fa-users fa-fw"></i> Empleados</a>
                             
                         </li>
                         <li>
-                            <a href="departamento"><i class="fa fa-building fa-fw"></i> Departamentos</a>
+                            <a href="alta_departamento"><i class="fa fa-building fa-fw"></i> Departamentos</a>
                         </li>
                         <li>
                             <a href="equipo"><i class="fa fa-desktop fa-fw"></i> Equipos de computo</a>

@@ -1,45 +1,48 @@
 <?php
 
 //login---------------------------------------------------------------------------------------------------------------
-Route::get('iniciar', function (){
+Route::get('/iniciar', function (){
 	return view('login');
 });
 
 //tablas--------------------------------------------------------------------------------------------------------------
-Route::get('departamento', function (){
+Route::post('/departamento', function (){
 	return view('departamento');
 });
 
-Route::get('empleado', function (){
+Route::get('/empleado', function (){
 	return view('empleado');
 });
 
-Route::get('equipo', function (){
+Route::get('/equipo', function (){
 	return view('equipo');
 });
 
-Route::get('impresora', function (){
+Route::get('/impresora', function (){
 	return view('impresora');
 });
 
-Route::get('accesorio', function (){
+Route::get('/accesorio', function (){
 	return view('accesorio');
 });
 
 //altas---------------------------------------------------------------------------------------------------------------
-Route::get('alta_empleado', function (){
+Route::get('/alta_empleado', function (){
 	return view('alta_empleado');
 });
-Route::get('alta_departamento', function (){
-	return view('alta_departamento');
+
+Route::get('/alta_departamento', function () {
+    return view('departamento.alta_departamento');
 });
-Route::get('alta_equipo', function (){
+Route::get('/alta_equipo', function (){
 	return view('alta_equipo');
 });
-Route::get('alta_impresora', function (){
+Route::get('/alta_impresora', function (){
 	return view('alta_impresora');
 });
-Route::get('alta_accesorio', function (){
+Route::get('/alta_accesorio', function (){
 	return view('alta_accesorio');
 });
+
+
 

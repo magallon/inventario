@@ -3,7 +3,9 @@
 
 @section('content')
 
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Alta Empleado</button>
+	<form action="" method="POST">
+
+		<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Alta Empleado</button>
 
 		<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
 		  <div class="modal-dialog" role="document">
@@ -13,7 +15,6 @@
 		        <h4 class="modal-title" id="exampleModalLabel">Alta de empleado</h4>
 		      </div>
 		      <div class="modal-body">
-		        <form>
 		          <div class="form-group">
 		            <label for="recipient-name" class="control-label">Nombre</label>
 		            <input type="text" class="form-control" id="recipient-name">
@@ -31,7 +32,6 @@
 						<option>Almacen</option>
 					</select>
 		          </div>
-		        </form>
 		      </div>
 		      <div class="modal-footer">
 		        <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
@@ -40,6 +40,7 @@
 		    </div>
 		  </div>
 		</div>
+	</form>
 
 		<script type="text/javascript">
 
