@@ -12,8 +12,10 @@
     <link rel="stylesheet" href="/css/metisMenu.min.css">
     <link rel="stylesheet" href="/css/sb-admin-2.css">
     <link rel="stylesheet" href="/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/css/jquery.dataTables.min.css">
     <link rel="icon" href="/img/favicon.ico">
+    <!-- CSS del plugin -->
+    <link rel="stylesheet" type="text/css" href="/css/jquery.dataTables.min.css">
+    <script type="text/javascript" language="javascript" src="/js/jquery-1.12.3.min.js"></script>
 
 </head>
 
@@ -55,11 +57,11 @@
                 <div class="sidebar-nav navbar-collapse">
                     <ul class="nav" id="side-menu">
                         <li>
-                            <a href="alta_empleado"><i class="fa fa-users fa-fw"></i> Empleados</a>
+                            <a href="empleado"><i class="fa fa-users fa-fw"></i> Empleados</a>
                             
                         </li>
                         <li>
-                            <a href="alta_departamento"><i class="fa fa-building fa-fw"></i> Departamentos</a>
+                            <a href="departamento"><i class="fa fa-building fa-fw"></i> Departamentos</a>
                         </li>
                         <li>
                             <a href="equipo"><i class="fa fa-desktop fa-fw"></i> Equipos de computo</a>
@@ -103,9 +105,9 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/metisMenu.min.js"></script>
     <script src="js/sb-admin-2.js"></script>
-    <script src="js/jquery-1.12.3.js"></script>
-    <script src="js/jquery.dataTables.min.js"></script>
 
+    <!-- script del plugin -->
+    <script src="/js/jquery.dataTables.min.js" > </script>
 </body>
 
 </html>
