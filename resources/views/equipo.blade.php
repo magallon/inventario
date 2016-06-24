@@ -2,32 +2,35 @@
 
 @section('content')
 <div class="row">
+    <div class="col-md-12"><h2 class="titulos">Tabla Equipos de Computo</h2></div>
+</div>
+<div class="row">
     <div class="table-responsive col-md-10">
      <table id="example" class="display" cellspacing="0" width="100%">
             <thead>
                 <tr>
-                    <th>Name</th>
-                    <th>Position</th>
-                    <th>Office</th>
-                    <th>Age</th>
-                    <th>Start date</th>
-                    <th>Salary</th>
+                    <th>Nombre</th>
+                    <th>Marca</th>
+                    <th>Precio</th>
+                    <th>Estatus</th>
+                    <th>Área</th>
+                    <th>Acciones</th>
                 </tr>
             </thead>
             <tfoot>
                 <tr>
-                    <th>Name</th>
-                    <th>Position</th>
-                    <th>Office</th>
-                    <th>Age</th>
-                    <th>Start date</th>
-                    <th>Salary</th>
+                    <th>Nombre</th>
+                    <th>Marca</th>
+                    <th>Precio</th>
+                    <th>Estatus</th>
+                    <th>Área</th>
+                    <th>Acciones</th>
                 </tr>
             </tfoot>
             <tbody>
                 <tr>
                     <td>Tiger Nixon</td>
-                    <td>System Architect</td>
+                    <td>System</td>
                     <td>Edinburgh</td>
                     <td>61</td>
                     <td>2011/04/25</td>
@@ -43,7 +46,7 @@
                 </tr>
                 <tr>
                     <td>Ashton Cox</td>
-                    <td>Junior Technical Author</td>
+                    <td>Author</td>
                     <td>San Francisco</td>
                     <td>66</td>
                     <td>2009/01/12</td>
@@ -63,7 +66,22 @@
                     <td>Tokyo</td>
                     <td>33</td>
                     <td>2008/11/28</td>
-                    <td>$162,700</td>
+                    <td>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <button class="btn btn-success"><i class="fa fa-eye" aria-hidden="true"></i></button>
+                            </div>
+
+                            <div class="col-md-3">
+                                <button class="btn btn-primary" ><span><i class="fa fa-pencil" aria-hidden="true"></i></span></button>
+                            </div>
+                            
+                            <div class="col-md-3">
+                                <button class="btn btn-danger"><i class="fa fa-trash" aria-hidden="true"></i></button>
+                            </div>
+                            
+                        </div>
+                    </td>
                 </tr>
                 <tr>
                     <td>Brielle Williamson</td>
@@ -83,7 +101,7 @@
                 </tr>
                 <tr>
                     <td>Rhona Davidson</td>
-                    <td>Integration Specialist</td>
+                    <td>Integration </td>
                     <td>Tokyo</td>
                     <td>55</td>
                     <td>2010/10/14</td>
@@ -91,7 +109,7 @@
                 </tr>
                 <tr>
                     <td>Colleen Hurst</td>
-                    <td>Javascript Developer</td>
+                    <td>Developer</td>
                     <td>San Francisco</td>
                     <td>39</td>
                     <td>2009/09/15</td>
@@ -99,7 +117,7 @@
                 </tr>
                 <tr>
                     <td>Sonya Frost</td>
-                    <td>Software Engineer</td>
+                    <td>Engineer</td>
                     <td>Edinburgh</td>
                     <td>23</td>
                     <td>2008/12/13</td>
@@ -123,7 +141,7 @@
                 </tr>
                 <tr>
                     <td>Charde Marshall</td>
-                    <td>Regional Director</td>
+                    <td>Director</td>
                     <td>San Francisco</td>
                     <td>36</td>
                     <td>2008/10/16</td>
@@ -132,7 +150,7 @@
                
                 <tr>
                     <td>Zorita Serrano</td>
-                    <td>Software Engineer</td>
+                    <td>Engineer</td>
                     <td>San Francisco</td>
                     <td>56</td>
                     <td>2012/06/01</td>
@@ -140,7 +158,7 @@
                 </tr>
                 <tr>
                     <td>Jennifer Acosta</td>
-                    <td>Junior Javascript Developer</td>
+                    <td>Developer</td>
                     <td>Edinburgh</td>
                     <td>43</td>
                     <td>2013/02/01</td>
@@ -156,7 +174,7 @@
                 </tr>
                 <tr>
                     <td>Hermione Butler</td>
-                    <td>Regional Director</td>
+                    <td>Director</td>
                     <td>London</td>
                     <td>47</td>
                     <td>2011/03/21</td>
@@ -164,7 +182,7 @@
                 </tr>
                 <tr>
                     <td>Lael Greer</td>
-                    <td>Systems Administrator</td>
+                    <td>Administrator</td>
                     <td>London</td>
                     <td>21</td>
                     <td>2009/02/27</td>
@@ -180,7 +198,7 @@
                 </tr>
                 <tr>
                     <td>Shad Decker</td>
-                    <td>Regional Director</td>
+                    <td>Director</td>
                     <td>Edinburgh</td>
                     <td>51</td>
                     <td>2008/11/13</td>
@@ -188,7 +206,7 @@
                 </tr>
                 <tr>
                     <td>Michael Bruce</td>
-                    <td>Javascript Developer</td>
+                    <td>Developer</td>
                     <td>Singapore</td>
                     <td>29</td>
                     <td>2011/06/27</td>
@@ -204,6 +222,9 @@
                 </tr>
             </tbody>
         </table>
+    </div>
+    <div class="table-responsive col-md-2">
+        <button class="btn btn-info" ><span><i class="fa fa-plus" aria-hidden="true"></i></span></button>
     </div>
 </div>
 
