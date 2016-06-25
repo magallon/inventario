@@ -40,6 +40,8 @@ Route::get('/alta_empleado', function (){
 
 Route::post('/departamento', 'departamentoController@store');
 
+Route::post('/empleado', 'departamentoController@store');
+
 Route::get('/alta_equipo', function (){
 	return view('alta_equipo');
 });

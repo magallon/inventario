@@ -412,7 +412,7 @@
     <div class="table-responsive col-md-2">
         <button type="button" class="btn btn-info" data-toggle="modal" data-target="#exampleModal"><span><i class="fa fa-plus" aria-hidden="true"></i></span></button>
      </div>
-        <form action="" method="POST">
+        <form action="empleado" method="POST">
             <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
               <div class="modal-dialog" role="document">
                 <div class="modal-content">
@@ -423,11 +423,11 @@
                   <div class="modal-body">
                       <div class="form-group">
                         <label for="recipient-name" class="control-label">Nombre</label>
-                        <input type="text" class="form-control" id="recipient-name">
+                        <input type="text" class="form-control" name="nombre" id="recipient-name">
                       </div>
                       <div class="form-group">
                         <label for="message-text" class="control-label">Departamento</label>
-                        <select class="form-control">
+                        <select class="form-control" name="departamento">
                             <option>-Departamento-</option>
                             <option>Compras</option>
                             <option>Administracion</option>
