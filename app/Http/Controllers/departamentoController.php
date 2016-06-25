@@ -26,7 +26,7 @@ class departamentoController extends Controller
      */
     public function create()
     {
-        return view('departamento.alta_departamento');
+        return view('departamento');
     }
 
     /**
@@ -37,10 +37,7 @@ class departamentoController extends Controller
      */
     public function store(Request $request)
     {
-       \inventario\Departamentos::create([
-        'nombre' => $request('nombre')
-
-        ]);
+       \inventario\Departamento::create(['nombre' => $request->nombre]);
     }
 
     /**

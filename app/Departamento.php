@@ -4,9 +4,15 @@ namespace inventario;
 
 use Illuminate\Database\Eloquent\Model;
 
+
+
 class Departamento extends Model
 {
-   protected table = "departamento"
+
+   public $timestamps = false;
+
+   protected $table = "departamento";
 
    protected $fillable = ['nombre'];
+
 }

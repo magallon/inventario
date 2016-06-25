@@ -16,7 +16,52 @@
     <link rel="icon" href="/img/favicon.ico">
     <!-- CSS del plugin -->
     <link rel="stylesheet" type="text/css" href="/css/jquery.dataTables.min.css">
+    
+    <!-- JS del plugin -->
+    
     <script type="text/javascript" language="javascript" src="/js/jquery-1.12.3.min.js"></script>
+    <script type="text/javascript" src="//cdn.datatables.net/plug-ins/1.10.12/i18n/Spanish.json"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/metisMenu.min.js"></script>
+    <script src="js/sb-admin-2.js"></script>
+    <script src="/js/jquery.dataTables.min.js" > </script>
+    
+    <!-- Script que traduce la data table -->
+    <script>    
+        $(document).ready(function() 
+        {
+            $('#example').DataTable( 
+            {
+                "language": 
+                {
+                    "lengthMenu": "Visualizar _MENU_ registros por página",
+                    "sZeroRecords":    "No se encontraron resultados",
+                    "sInfo":           "Mostrando registros del _START_ al _END_ de un total de _TOTAL_ registros",
+                    "sEmptyTable":     "Ningún dato disponible en esta tabla",
+                    "sSearch":         "Buscar:",
+                    "sLoadingRecords": "Cargando...",
+                    "infoFiltered": "(filtered from _MAX_ total records)",
+                    "oPaginate": 
+                    {
+                        "sFirst":    "Primero",
+                        "sLast":     "Último",
+                        "sNext":     "Siguiente",
+                        "sPrevious": "Anterior"
+                    },
+
+                    "oAria": 
+                    {
+                        "sSortAscending":  ": Activar para ordenar la columna de manera ascendente",
+                        "sSortDescending": ": Activar para ordenar la columna de manera descendente"
+                    }
+
+
+                }
+            });
+        });
+    </script>
+
 
 </head>
 
@@ -100,15 +145,6 @@
 
     </div>
     
-
-
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/metisMenu.min.js"></script>
-    <script src="js/sb-admin-2.js"></script>
-
-    <!-- script del plugin -->
-    <script src="/js/jquery.dataTables.min.js" > </script>
 </body>
 
 </html>

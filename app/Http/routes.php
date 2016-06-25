@@ -5,8 +5,9 @@ Route::get('/iniciar', function (){
 	return view('login');
 });
 
+
 //tablas--------------------------------------------------------------------------------------------------------------
-Route::post('/departamento', function (){
+Route::get('/departamento', function (){
 	return view('departamento');
 });
 
@@ -31,9 +32,14 @@ Route::get('/alta_empleado', function (){
 	return view('alta_empleado');
 });
 
-Route::get('/alta_departamento', function () {
-    return view('departamento.alta_departamento');
+/*
+	Route::get('/alta_departamento', function () {
+  	return view('departamento.alta_departamento');
 });
+*/
+
+Route::post('/departamento', 'departamentoController@store');
+
 Route::get('/alta_equipo', function (){
 	return view('alta_equipo');
 });
@@ -43,6 +49,8 @@ Route::get('/alta_impresora', function (){
 Route::get('/alta_accesorio', function (){
 	return view('alta_accesorio');
 });
+
+
 
 
 
