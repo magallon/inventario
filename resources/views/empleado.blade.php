@@ -68,20 +68,16 @@
                       <div class="form-group">
                         <label for="message-text" class="control-label">Departamento</label>
                         <select class="form-control" name="departamento">
-                            <option>-Departamento-</option>
-                            <option>Compras</option>
-                            <option>Administracion</option>
-                            <option>Telemarketing</option>
-                            <option>Ventas</option>
-                            <option>Compras</option>
-                            <option>Contabilidad</option>
-                            <option>Almacen</option>
+                            <option value="#">-Departamento-</option>
+                            @foreach($departamentos as $departamento)
+                            <option value="{{$departamento->id}}">{{$departamento->nombre}}</option>
+                            @endforeach
                         </select>
                       </div>
                   </div>
                   <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
-                    <button type="button" class="btn btn-primary">Registrar</button>
+                    <button type="submit" class="btn btn-primary">Registrar</button>
                   </div>
                 </div>
               </div>

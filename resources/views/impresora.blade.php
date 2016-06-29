@@ -58,7 +58,7 @@
         </table>
     </div>
     <div class="table-responsive col-md-2">
-        <button class="btn btn-info" ><span><i class="fa fa-plus" aria-hidden="true"></i></span></button>
+        <a class="btn btn-info" href="/alta_impresora"><span><i class="fa fa-plus" aria-hidden="true"></i></span></a>
     </div>
 </div>
 

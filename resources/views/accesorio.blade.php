@@ -45,7 +45,7 @@
 	                    	</div>
 	                    	
 	                    	<div class="col-md-3">
-	                    		<button class="btn btn-danger"><i class="fa fa-trash" aria-hidden="true"></i></button>
+	                    		<a class="btn btn-danger"><i class="fa fa-trash" aria-hidden="true"></i></a>
 	                    	</div>
 	                    	
 	                    </div>
@@ -80,7 +80,7 @@
         </table>
     </div>
     <div class="table-responsive col-md-2">
-        <button class="btn btn-info" ><span><i class="fa fa-plus" aria-hidden="true"></i></span></button>
+        <a class="btn btn-info" href="/alta_accesorio"><span><i class="fa fa-plus" aria-hidden="true"></i></span></a>
     </div>
 </div>
 

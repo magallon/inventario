@@ -3,7 +3,7 @@
 @section('content')
 
 <div class="container">
-			<h2 class="jumbotron">Registrar Impresora</h2>
+			<h2 class="titulos">Registrar Impresora</h2>
 			<form action="" class="">
 				<div class="row">
 					<div class="col-md-4">

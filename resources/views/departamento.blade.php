@@ -2,53 +2,23 @@
 
 @section('content')
 <div class="row">
-    <div class="col-md-12"><h2 class="titulos">Tabla Departamentos</h2></div>
+    <div class="col-md-12"><h2 class="titulos">Lista de departamentos</h2></div>
 </div>
 <div class="row">
     <div class="table-responsive col-md-10">
-     <table id="example" class="display" cellspacing="0" width="100%">
-            <thead>
-                <tr>
-                    <th>ID</th>
-                    <th>Nombre</th>
-                    <th>Área</th>
-                    <th>Acciones</th>
-                </tr>
-            </thead>
-            <tfoot>
-                <tr>
-                    <th>ID</th>
-                    <th>Nombre</th>
-                    <th>Área</th>
-                    <th>Acciones</th>
-                </tr>
-            </tfoot>
-            <tbody>
-                <tr>
-                    <td>Tiger Nixon</td>
-                    <td>System Architect</td>
-                    <td>Edinburgh</td>
-
-                    <td>
-                        <div class="row">
-                           
-                            <div class="col-md-3">
-                                <button class="btn btn-primary" ><span><i class="fa fa-pencil" aria-hidden="true"></i></span></button>
-                            </div>
-                            
-                            <div class="col-md-3">
-                                <button class="btn btn-danger"><i class="fa fa-trash" aria-hidden="true"></i></button>
-                            </div>
-                            
-                        </div>
-                    </td>
-
-                </tr>
-            </tbody>
-        </table>
+        @if(session()->has('success'))
+            <div class="alert alert-success">Genial!. El departamento fue creado correctamente.</div>
+        @elseif(session()->has('error'))
+            <div class="alert alert-danger">Error!. No se pudo crear al departamento.</div>
+        @endif
+        <ul class="list-group">
+            @foreach($departamentos as $departamento)
+                <li class="list-group-item">{{ $departamento->nombre }}</li>
+            @endforeach
+        </ul>
     </div>
-    <div class="table-responsive col-md-2">
-        <form action="departamento" method="POST">
+        <div class="table-responsive col-md-2">
+        <form action="/departamento" method="POST">
 		    <button type="button" class="btn btn-info" data-toggle="modal" data-target=".bs-example-modal-sm"><span><i class="fa fa-plus" aria-hidden="true"></i></span></button>
 		    <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
 		      <div class="modal-dialog modal-sm">  

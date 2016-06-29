@@ -37,7 +37,10 @@ class departamentoController extends Controller
      */
     public function store(Request $request)
     {
-       \inventario\Departamento::create(['nombre' => $request->nombre]);
+       if(\inventario\Departamento::create(['nombre' => $request->nombre])){
+            return back()->with('success', true);
+       }
+       return back()->with('error', true);
     }
 
     /**
