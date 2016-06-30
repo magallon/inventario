@@ -4,7 +4,15 @@
 
 
 <div class="row">
-    <div class="col-md-12"><h2 class="titulos">Tabla Empleados</h2></div>
+    <div class="col-md-12">
+        <h2 class="titulos">Tabla Empleados</h2>
+        @if(session()->has('success'))
+          <div class="alert alert-success">Genial!! El empleado ha sido dado de alta.</div>
+        @elseif(session()->has('error'))
+          <div class="alert alert-danger">Error!! El empleado no ha sido dado de alta.</div>
+        @endif
+    </div>
+
 </div>
 <div class="row">
     <div class="table-responsive col-md-10">
@@ -26,26 +34,23 @@
                 </tr>
             </tfoot>
             <tbody>
-                <tr>
-                    <td>Tiger Nixon</td>
-                    <td>System Architect</td>
-                    <td>Edinburgh</td>
-
-                    <td>
-                        <div class="row">
-                           
-                            <div class="col-md-4">
-                                <button class="btn btn-primary" ><span><i class="fa fa-pencil" aria-hidden="true"></i></span></button>
-                            </div>
-                            
-                            <div class="col-md-4">
-                                <button class="btn btn-danger"><i class="fa fa-trash" aria-hidden="true"></i></button>
-                            </div>
-                            
-                        </div>
-                    </td>
-
-                </tr>
+                @foreach($empleados as $empleado)
+                  <tr>
+                      <td>{{$empleado->nombre}}</td>
+                      <td>{{$empleado->departamento}}</td>
+                      <td>{{$empleado->equipo}}</td>
+                      <td>
+                          <div class="row">
+                              <div class="col-md-4">
+                                  <button class="btn btn-primary" ><span><i class="fa fa-pencil" aria-hidden="true"></i></span></button>
+                              </div>
+                              <div class="col-md-4">
+                                  <button class="btn btn-danger"><i class="fa fa-trash" aria-hidden="true"></i></button>
+                              </div>
+                          </div>
+                      </td>
+                  </tr>
+                @endforeach
             </tbody>
         </table>
     </div>
